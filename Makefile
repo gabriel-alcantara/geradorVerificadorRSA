@@ -6,7 +6,7 @@ CC = g++
 
 #COMPILER_FLAGS specifies the additional compilation options we're using
 # -w suppresses all warnings
-COMPILER_FLAGS = -std=c++11
+COMPILER_FLAGS = -std=c++11 -lssl -lcrypto
 
 #OBJ_NAME specifies the name of our exectuable
 OBJ_NAME = bin/rsa
