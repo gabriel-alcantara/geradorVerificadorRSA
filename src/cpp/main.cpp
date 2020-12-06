@@ -1,16 +1,20 @@
-// Your First C++ Program
+// my_program.cpp
+#include "../hpp/my_class.hpp"
+#include "../hpp/file.hpp"
+#include "../hpp/openssl.hpp"
 
-#include <iostream>
+using namespace N;
 
-// #include <openssl/bio.h> /* BasicInput/Output streams */
+int main()
+{
+    my_class mc;
+    mc.do_something();
 
-// #include <openssl/err.h> /* errors */
+    file f;
+    f.read("C:\\cygwin64\\home\\Gabriel\\project makefile\\src\\files\\test.txt");
 
-// #include <openssl/ssl.h> /* core library */
+    openssl op;
+    op.stringToSha3("123456");
 
-using namespace std;
-
-int main() {
-    cout << "Hello World!";
     return 0;
 }
