@@ -1,5 +1,5 @@
-#ifndef OPENSSL_H
-#define OPENSSL_H
+#ifndef SHA3_H
+#define SHA3_H
 
 #include <string>
 
@@ -7,10 +7,10 @@ using namespace std;
 
 namespace N
 {
-    class openssl
+    class sha3
     {
     public:
-        void testRsa();
+        void stringToSha3(string);
     };
 }
 
